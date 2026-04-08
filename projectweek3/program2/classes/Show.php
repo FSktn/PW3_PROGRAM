@@ -68,7 +68,7 @@ class Show extends Attraction
     }
 
     /**
-     * Backward-compatible alias from opdracht sheet typo.
+     * backward-compatible alias from opdracht sheet typo.
      */
     public function hasAvailibleSeats(): bool
     {

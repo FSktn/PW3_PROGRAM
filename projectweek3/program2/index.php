@@ -19,7 +19,7 @@ declare(strict_types=1);
             <a href="opdracht1.php">Opdracht 1 bekijken</a>
             <a href="opdracht2.php">Opdracht 2 bekijken</a>
         </div>
-        <p class="small">Mapstructuur: projectweek3/program2</p>
+        <p class="small">Mapstructuur: projectweek3/PROGRAM2</p>
     </div>
 </div>
 </body>

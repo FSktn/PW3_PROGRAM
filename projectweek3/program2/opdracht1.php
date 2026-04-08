@@ -41,7 +41,7 @@ foreach ($attractions as $attraction) {
         <p class="lead">Overzicht van 3 objecten van class <strong>Attraction</strong>.</p>
         <div class="nav">
             <a href="index.php">Terug naar index</a>
-            <a href="opdracht2.php">Ga naar opdracht 2</a>
+            <a href="opdracht2.php">Ga naar opdracht 2:</a>
         </div>
     </div>
 
