@@ -4,14 +4,17 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/classes/Attraction.php';
 
+// test data voor opdracht 1
+
 $attractions = [
     new Attraction('Aqua Spin', 20, 'open', 120, 'Zone A', 24),
     new Attraction('Big Thunder Track', 45, 'gesloten', 140, 'Zone B', 18),
-    // Pas deze naam aan op basis van de eerste letter van je achternaam als nodig.
+    // pas naam aan op je achternaam
     new Attraction('Kasteelplein Showpodium', 10, 'open', 0, 'Zone K', 250),
 ];
 
 $rows = [];
+// zet object data klaar voor tabel
 foreach ($attractions as $attraction) {
     $info = $attraction->showInfo();
 

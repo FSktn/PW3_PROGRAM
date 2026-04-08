@@ -4,12 +4,13 @@ declare(strict_types=1);
 
 class Attraction
 {
+    // basis gegevens
     private string $name;
     private int $waitTime;
     private string $status;
     private int $minHeight;
 
-    // Extra properties (optioneel in constructor)
+    // extra gegevens
     protected string $location;
     protected int $capacity;
 
@@ -31,6 +32,7 @@ class Attraction
 
     public function showInfo(): array
     {
+        // geef alle data terug
         return [
             'name' => $this->name,
             'waitTime' => $this->waitTime,
@@ -43,6 +45,7 @@ class Attraction
 
     public function isOpen(): bool
     {
+        // check status
         return strtolower($this->status) === 'open';
     }
 

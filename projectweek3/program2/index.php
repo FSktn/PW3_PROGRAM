@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+// start pagina
 ?>
 <!doctype html>
 <html lang="nl">
@@ -11,6 +12,7 @@ declare(strict_types=1);
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<!-- links naar opdrachten -->
 <div class="container">
     <div class="card">
         <h1>Program2 - OOP Attracties</h1>
