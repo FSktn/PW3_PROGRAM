@@ -1,0 +1,127 @@
+:root {
+    --bg: #f7f5ef;
+    --surface: #ffffff;
+    --text: #1f1d1a;
+    --muted: #66635c;
+    --accent: #0d6a6a;
+    --accent-soft: #e5f4f4;
+    --danger: #9e2f2f;
+    --ok: #1e7d3a;
+    --radius: 14px;
+    --shadow: 0 10px 25px rgba(20, 18, 13, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    color: var(--text);
+    background:
+        radial-gradient(circle at 15% 10%, #fff4db 0%, transparent 42%),
+        radial-gradient(circle at 90% 20%, #d7f3ef 0%, transparent 36%),
+        var(--bg);
+}
+
+.container {
+    width: min(1100px, 92vw);
+    margin: 2rem auto;
+}
+
+h1,
+h2 {
+    margin: 0 0 0.9rem;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(1.7rem, 2.5vw, 2.5rem);
+}
+
+.lead {
+    color: var(--muted);
+    margin-top: 0;
+}
+
+.card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--surface);
+}
+
+th,
+td {
+    padding: 0.72rem;
+    border-bottom: 1px solid #ece8dd;
+    text-align: left;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+th {
+    background: var(--accent-soft);
+    color: #0f3d3d;
+}
+
+.status-open {
+    color: var(--ok);
+    font-weight: 700;
+}
+
+.status-closed {
+    color: var(--danger);
+    font-weight: 700;
+}
+
+.pill {
+    display: inline-block;
+    font-size: 0.82rem;
+    padding: 0.22rem 0.55rem;
+    border-radius: 999px;
+    background: #f0f0f0;
+    color: #444;
+}
+
+.nav {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.nav a,
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background: var(--accent);
+    border: 0;
+    border-radius: 10px;
+    padding: 0.6rem 0.9rem;
+    display: inline-block;
+}
+
+.small {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 740px) {
+    th,
+    td {
+        font-size: 0.9rem;
+        padding: 0.58rem;
+    }
+}
